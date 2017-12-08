@@ -84,6 +84,44 @@
             </div>
           </section>
         </section>
+        <section>
+          <!-- Explanation of Linearization and Analysis -->
+          <h3 class="title">Linearization &amp; Analysis</h3>
+
+          <ul class="arrow">
+            <li>Linearize about \(\mathbf{v} = \mathbf{0}, ~\theta = 0\)</li>
+            <li>Apply \(\mathbf{\hat z}(\nabla\times\nabla\times)\) to the first eq.</li>
+            <li>Eliminate \(x, y, t\) dependence with Laplacian and Fourier Transforms</li>
+            <li>Eliminate \(\theta\) and achieve an ODE on \(v_z\)</li>
+            <li>Find the eigenvalues \(\lambda_n\)</li>
+            <li>Find conditions on \(\mathcal{R}[\lambda_n] &lt; 0\)</li>
+          </ul>
+        </section>
+        <section>
+          <!-- Results of Analysis -->
+          <h3 class="title">Stability Condition</h3>
+
+          $$
+            R &lt; R_n(k) \equiv \frac{(n^2\pi^2 + k^2)^3}{k^2}
+          $$
+          <div>
+            <div style="float:left; width:45%; height:100%;">
+              <img src="img/logplot.svg" style="background-color:white; margin-top:50%; transform: translateY(-50%);
+                                                -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%)" />
+            </div>
+            <div style="float:left; width:45%; height:100%;">
+              <img src="img/regionplot.svg" style="background-color:white;" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <!-- Questions -->
+          <h2 class="title"><i>Questions?</i></h2>
+          
+          <p style="color:lightgray">Zachary Kaplan - <a href="mailto:ztk4@njit.edu">ztk4@njit.edu</a></p>
+          <p>Self Link: <a href="https://ztk4.github.io/RayleighBenard">ztk4.github.io/RayleighBenard</a></p>
+          <p>Related Paper: <a href="https://www.sharelatex.com/read/xyhzqxtnbjpf">sharelatex.com/read/xyhzqxtnbjpf</a></p>
+        </section>
       </div>
     </div>
 
