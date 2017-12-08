@@ -273,3 +273,10 @@ section ul.arrow li:before {
   margin-left: -1em;
   margin-right: 0.5em;
 }
+
+section div.shadowbox {
+  background-color: #111;
+  opacity: 0.9 !important;
+  border-radius: 25px;
+  padding: 50px;
+}
