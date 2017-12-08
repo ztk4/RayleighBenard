@@ -26,10 +26,35 @@
       <div class="slides">
         <section>
           <!-- Title Slide -->
-          <h2 class="title">Rayleigh-B&eacute;nard Convection:</h2>
+          <h2 class="title">Rayleigh-B&eacute;nard Convection</h2>
           <h3 class="subtitle">Linear Stability Analysis</h3>
 
           <p style="color:lightgray">Zachary Kaplan - <a href="mailto:ztk4@njit.edu">ztk4@njit.edu</a></p>
+        </section>
+        <section>
+          <section>
+            <!-- Physical Explanation of the Model -->
+            <h3 class="title">The Model</h3>
+            <ul class="arrow">
+              <li>Infinite Horizontal Plane of Fluid</li>
+                <dl>Under the Boussinesq Approximation</dl>
+              <li>Heated From Below</li>
+              <li>In a Gravitational Field</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="title">The Model: The Math</h3>
+            $$ 
+							\begin{aligned}
+									&amp;\frac{1}{P}\left\lbrack\frac{\partial\mathbf{v}}{\partial t} + (\mathbf{v}\cdot\nabla)\mathbf{v}\right\rbrack = 
+										-\nabla\overline{\omega} + R\theta\mathbf{\hat z} + \nabla^2\mathbf{v}, \label{rb1}\\
+									&amp;\frac{\partial\theta}{\partial t} = v_z - \mathbf{v}\cdot\nabla\theta + \nabla^2\theta, \label{rb2}\\
+									&amp;\nabla\cdot\mathbf{v} = 0, \label{rb3}\\
+									&amp;\text{where}\\
+									&amp;R \propto \Delta T \in \mathbb{R}, \hspace{1em} P \in \mathbb{R}, \hspace{1em} \overline{\omega} \sim \frac{p'}{\rho_0}
+              \end{aligned}
+            $$
+          </section>
         </section>
       </div>
     </div>
@@ -50,7 +75,8 @@
         dependencies: [
           { src: 'revealjs/plugin/markdown/marked.js' },
           { src: 'revealjs/plugin/markdown/markdown.js' },
-          { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'revealjs/plugin/math/math.js', async: true }
         ]
       });
     </script>

@@ -260,3 +260,16 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/* CUSTOM */
+
+section ul.arrow {
+  list-style: none;
+  line-height: 1.5;
+}
+
+section ul.arrow li:before {
+  content: "➡";
+  margin-left: -1em;
+  margin-right: 0.5em;
+}
